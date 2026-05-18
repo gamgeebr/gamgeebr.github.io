@@ -9,7 +9,7 @@
 body {
     margin: 0;
     background-color: black;
-    font-family: Arial, sans-serif;
+    font-family: Playfair Display;
 }
 
 /* FAIXA SUPERIOR */
@@ -18,13 +18,15 @@ body {
     background: linear-gradient(to right, #0a2caf, white);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 0;
+    justify-content: flex-end;
+    position: relative;
 }
 
 /* TEXTO */
 .banner-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     color: black;
     font-size: 28px;
     font-weight: bold;
@@ -35,7 +37,6 @@ body {
     height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    display: block;
 }
 </style>
 </head>
