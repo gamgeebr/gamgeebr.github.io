@@ -4,13 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meu Site</title>
+
 <style>
 body {
     margin: 0;
     background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* FAIXA SUPERIOR */
+.top-banner {
+    height: 140px;
+    background: linear-gradient(to right, #007bff, white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+/* TEXTO OPCIONAL */
+.banner-text {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* IMAGEM */
+.banner-img {
+    height: 110px;
+    border-radius: 10px;
 }
 </style>
 </head>
+
 <body>
+
+<div class="top-banner">
+    <div class="banner-text">BEM-VINDO À LIVE</div>
+    <img src="packimg" class="banner-img">
+</div>
+
 </body>
 </html>
