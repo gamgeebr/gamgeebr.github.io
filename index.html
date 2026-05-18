@@ -19,21 +19,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 /* TEXTO */
 .banner-text {
     color: black;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
-/* IMAGEM */
+/* IMAGEM PREMIUM */
 .banner-img {
     height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0a2caf;
+    transition: 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.banner-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #0a2caf;
 }
 </style>
 </head>
@@ -42,7 +52,7 @@ body {
 
 <div class="top-banner">
     <div class="banner-text">PATROCÍNIOS ABERTOS</div>
-    <img src="packimg" class="banner-img">
+    <img src="packimg.jpg" class="banner-img">
 </div>
 
 </body>
