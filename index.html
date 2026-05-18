@@ -15,14 +15,14 @@ body {
 /* FAIXA SUPERIOR */
 .top-banner {
     height: 140px;
-    background: linear-gradient(to right, #007bff, white);
+    background: linear-gradient(to right, #0a2caf, white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
 }
 
-/* TEXTO OPCIONAL */
+/* TEXTO */
 .banner-text {
     color: black;
     font-size: 28px;
@@ -31,8 +31,9 @@ body {
 
 /* IMAGEM */
 .banner-img {
-    height: 110px;
-    border-radius: 10px;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 </style>
 </head>
@@ -40,7 +41,7 @@ body {
 <body>
 
 <div class="top-banner">
-    <div class="banner-text">BEM-VINDO À LIVE</div>
+    <div class="banner-text">PATROCÍNIOS ABERTOS</div>
     <img src="packimg" class="banner-img">
 </div>
 
