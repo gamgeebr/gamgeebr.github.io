@@ -9,10 +9,10 @@
 body {
     margin: 0;
     background-color: black;
-    font-family: Playfair Display;
+    font-family: Arial, sans-serif;
 }
 
-/* FAIXA SUPERIOR */
+/* ===== FAIXA SUPERIOR ===== */
 .top-banner {
     height: 140px;
     background: #0035bb;
@@ -22,7 +22,6 @@ body {
     position: relative;
 }
 
-/* TEXTO */
 .banner-text {
     position: absolute;
     left: 50%;
@@ -32,42 +31,156 @@ body {
     font-weight: bold;
 }
 
-/* IMAGEM */
 .banner-img {
     height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
-/* ===== ADIÇÃO ===== */
+/* ===== CRONOGRAMA ===== */
 
-.cronograma-box {
-    width: 300px;
-    margin: 40px auto;
-    background: white;
-    text-align: center;
-    padding: 15px 0;
+.schedule-section {
+    background: linear-gradient(to bottom, #111, #1c1c1c);
+    padding: 40px 20px;
 }
 
-.cronograma-box h2 {
-    margin: 0;
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.day-column {
+    width: 13%;
+    min-width: 160px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.day-column:first-child {
+    border-left: none;
+}
+
+.day-title {
+    background: white;
     color: black;
-    font-size: 28px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.card {
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: white;
+}
+
+/* CORES DOS DIAS */
+.yellow { color: #ffc400; }
+.blue { color: #00bfff; }
+.cyan { color: #00ffff; }
+.pink { color: #ff5fa2; }
+.red { color: #ff4d4d; }
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .day-column {
+        width: 45%;
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding-top: 20px;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- FAIXA AZUL -->
 <div class="top-banner">
     <div class="banner-text">PATROCÍNIOS ABERTOS</div>
     <img src="packimg" class="banner-img">
 </div>
 
-<!-- ===== ADIÇÃO ===== -->
+<!-- CRONOGRAMA -->
+<div class="schedule-section">
+<div class="container">
 
-<div class="cronograma-box">
-    <h2>CRONOGRAMA</h2>
+<div class="day-column">
+<div class="day-title">SEGUNDA</div>
+<div class="date">11/05</div>
+<div class="card yellow">VÍDEOS YOUTUBE</div>
+<div class="card yellow">PT FROM<br>2 EPS</div>
+<div class="card yellow">DIGIMON TAMERS<br>4 EPS</div>
+<div class="card yellow">PREDADORES</div>
+</div>
+
+<div class="day-column">
+<div class="day-title">TERÇA</div>
+<div class="date">12/05</div>
+<div class="card blue">2T FROM<br>2 EPS</div>
+<div class="card blue">DIGIMON TAMERS<br>6 EPS</div>
+<div class="card blue">PROMETHEUS (2012)<br>FILME</div>
+<div class="card blue">GAMEPLAY</div>
+</div>
+
+<div class="day-column">
+<div class="day-title">QUARTA</div>
+<div class="date">13/05</div>
+<div class="card cyan">2T FROM<br>2 EPS</div>
+<div class="card cyan">DIGIMON TAMERS<br>6 EPS</div>
+<div class="card cyan">O CHAMADO DA FLORESTA</div>
+<div class="card cyan">GAMEPLAY</div>
+</div>
+
+<div class="day-column">
+<div class="day-title">QUINTA</div>
+<div class="date">14/05</div>
+<div class="card pink">OFF</div>
+<div class="card pink">-</div>
+<div class="card pink">-</div>
+<div class="card pink">-</div>
+</div>
+
+<div class="day-column">
+<div class="day-title">SEXTA</div>
+<div class="date">15/05</div>
+<div class="card cyan">2T FROM<br>2 EPS</div>
+<div class="card cyan">DIGIMON TAMERS<br>6 EPS</div>
+<div class="card cyan">A VISITA<br>FILME</div>
+<div class="card cyan">GAMEPLAY</div>
+</div>
+
+<div class="day-column">
+<div class="day-title">SÁBADO</div>
+<div class="date">16/05</div>
+<div class="card pink">2T FROM<br>2 EPS</div>
+<div class="card pink">DIGIMON TAMERS<br>6 EPS</div>
+<div class="card pink">ALIEN COVENANT<br>FILME</div>
+<div class="card pink">GAMEPLAY</div>
+</div>
+
+<div class="day-column">
+<div class="day-title">DOMINGO</div>
+<div class="date">17/05</div>
+<div class="card red">OFF</div>
+<div class="card red">-</div>
+<div class="card red">-</div>
+<div class="card red">-</div>
+</div>
+
+</div>
 </div>
 
 </body>
